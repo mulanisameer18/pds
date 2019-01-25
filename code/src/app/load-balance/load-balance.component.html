@@ -1,0 +1,12 @@
+<p>
+  load-balance works!
+</p>
+
+
+<ul>
+  <li *ngFor="let processor of processorArray">Processor {{processor.processId}}
+    <ul>
+      <li *ngFor="let task of processor.tasks"> Task {{task.taskId}}</li>
+    </ul>
+  </li>
+</ul>
