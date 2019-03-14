@@ -1,0 +1,5 @@
+<div *ngFor = "let pr of process; let i = index">
+  <button (click)="processing(i)" 
+  [ngClass]="{'idle':pr.status == 'idle','running':pr.status == 'running','waiting':pr.status == 'waiting','done':pr.status == 'done'}">{{pr.id}}</button>
+
+</div>

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { toASCII } from 'punycode';
-export class task{
-  taskId:number;
-  duration:number
+export class task {
+  taskId: number;
+  duration: number;
 }
 export class processor{
   processId:number;

@@ -1,7 +1,10 @@
-<p>
+<!-- <p>
   name-resolution works!
-</p>
+</p> -->
 
 Domain Name: <br>
-<input type="text" name="siteAddress" [(ngModel)]="site" >
-<button (click)=""></button>
+<input type="text" (keyup.enter)="callDns()" name="siteAddress" [(ngModel)]="site" >
+<button (click)="callDns()">DNS</button>
+
+<h3>Site IP:</h3>
+<h2>{{siteIP}}</h2>
