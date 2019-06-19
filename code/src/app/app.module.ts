@@ -7,6 +7,7 @@ import { LoadBalanceComponent } from './load-balance/load-balance.component';
 import { NameResolutionComponent } from './name-resolution/name-resolution.component';
 import { InterprocessCommComponent } from './interprocess-comm/interprocess-comm.component';
 import { RemoteMethodInvocationComponent } from './remote-method-invocation/remote-method-invocation.component';
+import { MutualExclusionComponent } from './mutual-exclusion/mutual-exclusion.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RemoteMethodInvocationComponent } from './remote-method-invocation/remo
     LoadBalanceComponent,
     NameResolutionComponent,
     InterprocessCommComponent,
-    RemoteMethodInvocationComponent
+    RemoteMethodInvocationComponent,
+    MutualExclusionComponent
   ],
   imports: [
     BrowserModule,

@@ -2,11 +2,14 @@
   load-balance works!
 </p>
 
-
-<ul>
-  <li *ngFor="let processor of processorArray">Processor {{processor.processId}}
-    <ul>
-      <li *ngFor="let task of processor.tasks"> Task {{task.taskId}}</li>
-    </ul>
-  </li>
-</ul>
+<div class="container">
+  <div class="row m-0">
+<div class="col-sm-12">
+  <div class="card m-2" *ngFor="let processor of processorArray" style="background-color: #efefef">Processor {{processor.processId}}
+    <div class="row">
+      <div class="col m-2" *ngFor="let task of processor.tasks" style="background-color: #1ebfbf"> Task {{task.taskId}}</div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
